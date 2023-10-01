@@ -10,7 +10,8 @@ test_coin = "_"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
-rev = "mainnet"
+rev = "main"
 subdir = "aptos-move/framework/aptos-framework"
 
-[dev-dependencies]
+[dependencies.Parliament]
+local = "../../thala-modules/parliament"
