@@ -1,0 +1,6 @@
+{
+  "name": "Test Coin",
+  "symbol": "TEST",
+  "decimals": 8,
+  "monitor_supply": true
+}

@@ -1,0 +1,5 @@
+build/
+.aptos
+
+.vscode
+.idea

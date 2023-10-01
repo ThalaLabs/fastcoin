@@ -1,0 +1,13 @@
+[package]
+name = "Fastcoin"
+version = "1.0.0"
+authors = []
+
+[addresses]
+fastcoin = "701baacb2301e2e73e52a3e6ebe8d5fd42b754699b350a4a55a384fa2fa2e199"
+deployer = "4067b06096c3b5db02e4d93eb377f625d67a355208358d300fe72d79cb30d7e5"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
