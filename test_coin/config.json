@@ -1,6 +1,7 @@
 {
-  "name": "Test Coin",
-  "symbol": "TEST",
+  "struct": "USDC",
+  "name": "USD Coin",
+  "symbol": "USDC",
   "decimals": 8,
   "monitor_supply": true
 }

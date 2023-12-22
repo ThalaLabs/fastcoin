@@ -10,6 +10,7 @@ NC='\033[0m' # No Color
 
 # Define variables
 function_id="701baacb2301e2e73e52a3e6ebe8d5fd42b754699b350a4a55a384fa2fa2e199::fastcoin::mint_to"
+struct=$(jq -r '.struct' config.json)
 TEST_COIN=$(aptos config show-profiles --profile default | jq -r ".Result.default.account")
 
 # Define usage function
@@ -51,5 +52,5 @@ amount="$2"
 echo -e "${GREEN}Minting ${amount} coins to ${to} ...${NC}"
 aptos move run --assume-yes \
   --function-id "$function_id" \
-  --type-args 0x$TEST_COIN::test_coin::TestCoin \
+  --type-args 0x$TEST_COIN::test_coin::$struct \
   --args address:"$to" u64:"$amount"
